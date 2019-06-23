@@ -1,0 +1,21 @@
+name: PluginManager-Revamped
+version: 2.1-Beta
+authors: [wroyce, ThatProgrammer]
+main: mc.wroyce.pm.revamped.Core
+description: An updated lightweight Plugin Management tool.
+
+commands:
+  load:
+    aliases: [loadplugin, load, pmload]
+    permission: pluginmanager.load
+  unload:
+    aliases: [unloadplugin, unload, pmunload]
+    permission: pluginmanager.unload
+
+permissions:
+  pluginmanager.load:
+     default: op
+     description: Allows the user to load a plugin
+  pluginmanager.unload:
+    default: op
+    description: Allows the user to unload a plugin
