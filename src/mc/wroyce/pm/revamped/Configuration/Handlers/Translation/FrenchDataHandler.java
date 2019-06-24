@@ -11,7 +11,7 @@ public class FrenchDataHandler {
     FileConfiguration config;
 
     public FrenchDataHandler() {
-        cfile = new File("Plugins/PluginManager-Revamped/Translation", "French.yml");
+        cfile = new File("Plugins/PluginManager-Revamped/Translation", "English.yml");
         config = YamlConfiguration.loadConfiguration(cfile);
     }
 

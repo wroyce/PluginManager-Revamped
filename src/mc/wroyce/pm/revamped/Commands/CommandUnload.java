@@ -27,7 +27,7 @@ public class CommandUnload implements CommandExecutor {
 
     public boolean onCommand (CommandSender sender, Command cmd, String label, String[] args) {
         Player player = (Player) sender;
-        if (player.hasPermission(PermissionManager.loadPermission)) {
+        if (player.hasPermission(PermissionManager.unloadPermission)) {
             try {
                 Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin(args[0]);
                 if (plugin != null && plugin.isEnabled()) {
