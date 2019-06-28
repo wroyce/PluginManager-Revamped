@@ -1,5 +1,6 @@
 package mc.wroyce.pm.revamped.Configuration.Handlers.Translation;
 
+import mc.wroyce.pm.revamped.Core;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -11,7 +12,7 @@ public class SpanishDataHandler {
     FileConfiguration config;
 
     public SpanishDataHandler() {
-        cfile = new File("Plugins/PluginManager-Revamped/Translation", "Spanish.yml");
+        cfile = new File(Core.getInstance().getDataFolder() + "/Translation/", "Spanish.yml");
         config = YamlConfiguration.loadConfiguration(cfile);
     }
 

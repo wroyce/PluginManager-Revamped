@@ -1,5 +1,6 @@
 package mc.wroyce.pm.revamped.Configuration.Handlers.Translation;
 
+import mc.wroyce.pm.revamped.Core;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -11,7 +12,7 @@ public class DanishDataHandler {
     FileConfiguration config;
 
     public DanishDataHandler() {
-        cfile = new File("Plugins/PluginManager-Revamped/Translation", "Danish.yml");
+        cfile = new File(Core.getInstance().getDataFolder() + "/Translation/", "Danish.yml");
         config = YamlConfiguration.loadConfiguration(cfile);
     }
 
